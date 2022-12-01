@@ -1,0 +1,213 @@
+body{ 
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    min-width: 1000px;
+}
+
+main{
+    margin-top: 14%;
+}
+
+.content{
+    background-color: white;
+    width: 55rem;
+    height: 28rem;
+    border-radius: 50px;
+    display: grid;
+    margin: auto;
+
+}
+h1{
+    font-weight: bold;
+    opacity: 0.6;
+    font-size: 1rem;
+}
+.input-icon{
+    position: relative;
+    margin-top:2rem;
+    margin-left: 3rem;
+    
+}
+
+.bill{
+    width: 19.3rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color:  hsl(189, 41%, 97%);
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    
+}
+input[type=text]:focus{
+    border:3px solid hsl(185, 41%, 84%);
+}
+#dollar{
+    position: relative;
+    right: 19.8rem;
+    top: 4px;
+}
+h2{
+    font-size: 1rem;
+    opacity: 0.6;
+    position: relative;
+    top: 8.5rem;
+    right: 24.2rem;
+    font-weight: bold;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows:50px 50px 50px; 
+    grid-gap: 10px;
+    position: relative;
+    top: 4rem;
+    left: 3rem
+}
+.btn{
+    
+    font-family: 'Space Mono', monospace;
+    background-color:   hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    color:  hsl(183, 100%, 15%);
+}
+.otherperc{
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+}
+h3{
+    position: relative;
+    bottom: 13rem;
+    left: 3rem;
+    opacity: 0.5;
+    font-family: 'Space Mono', monospace;
+}
+.number{
+    width: 19.3rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color:  hsl(189, 41%, 97%);
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    bottom: 13.5rem;
+    left: 3rem;
+}
+#people{
+    position: relative;
+    bottom: 13.2rem;
+    right: 16.7rem;
+}
+.side{
+    width: 25rem;
+    height: 25rem;
+    background-color: hsl(183, 100%, 15%) ;
+    grid-row:2/3;
+    grid-column: 2/2;
+    position: relative;
+    bottom: 6rem;
+    border-radius: 50px;
+}
+h4{
+    color: white;
+    font-weight: 400;
+    margin-left: 3rem;
+    margin-top: 3.2rem;
+    cursor:default;
+}
+p{
+    color: white;
+    margin-left: 3rem;
+    margin-top: -1rem;
+    opacity: 0.7;
+    cursor:default;
+}
+span{
+    margin-left:13.5rem;
+    position: relative;
+    bottom: 5rem;
+    font-size: 3em;
+    cursor:default;
+    color: aquamarine;
+    font-weight: bold;
+}
+#total-h{
+    cursor:default;
+    margin-top: -3rem;
+}
+.reset{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 300px;
+    height: 45px;
+    border-radius: 5px;
+    padding-top: 7.5px;
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    font-family: 'Space Mono', monospace ;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: rgb(41, 40, 40);
+    letter-spacing: 1px;
+}
+.reset:hover{
+    background-color: hsl(174, 22%, 74%);
+
+}
+@media only screen and (max-device-width: 480px) {
+    body{
+        background-color: white;
+    }
+    .content{
+       float: left;
+        width: 23rem;
+        margin-top: -10rem;
+    }
+   .bill{
+    display: flex;
+    margin: auto;
+    width: 16rem;
+    margin-right: 5rem;
+   }
+   #dollar{
+    position: relative;
+    left: 0.7rem;
+    top:-2rem;
+   }
+    h2{
+     margin-left: 3rem;
+     margin-top: -0.2em;
+    }
+    .grid{
+        grid-template-columns: 125px 125px;
+        margin-top: -2.3rem;
+    }
+    .number{
+        width: 16rem;
+    }
+   #people{
+     right: 13.3rem;
+   }
+   .side{
+    top:19rem;
+    right: 25.5rem;
+    
+   }
+
+}

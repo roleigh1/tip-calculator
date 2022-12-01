@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="content">
+      
+        <div class="input-icon">
+          <h1>Bill</h1>
+          <input type="text" class="bill" placeholder="142.55">
+          <img src="icon-dollar.svg"  id="dollar" width="20" height="20">
+        </div> 
+        <h2>Select Tip % </h2>
+        <div class="grid">
+          <input type="button" class="btn" value="5%">
+          <input type="button" class="btn" value="10%">
+          <input type="button" class="btn" value="15%">
+          <input type="button" class="btn" value="25%">
+          <input type="button" class="btn" value="50%">
+          <input type="text" class="otherperc" value="Custom">
+        </div>
+        <div class="people">
+          <h3>Number of People</h3>
+          <input type="text" class="number" placeholder="0">
+           <img id="people" src="icon-person.svg" alt="" width="20" height="20">
+        </div>
+        <div class="side">
+           <h4>Tip Amount</h4>
+            <p>/ person</p>
+            <span id="amount">$0.00</span>
+            <h4 id="total-h">Total</h4>
+            <p>/ person</p>
+            <span id="total">$0.00</span>
+            <button class="reset">RESET</button>
+        </div>
+   </main>
+</body>
+</html>
