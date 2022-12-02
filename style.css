@@ -416,6 +416,9 @@ span{
         width: 23rem;
         margin-top: -10rem;
     }
+    .btn{
+        border-radius:5px;
+    }
    .bill{
     display: flex;
     margin: auto;
