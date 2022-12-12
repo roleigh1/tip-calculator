@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
+
 </head>
 <body>
   <main>
@@ -16,21 +17,23 @@
       
         <div class="input-icon">
           <h1>Bill</h1>
-          <input type="text" class="bill" placeholder="142.55">
+         <form id="form1">
+          <input type="text" class="bill-amount" placeholder="0">
+        </form>
           <img src="icon-dollar.svg"  id="dollar" width="20" height="20">
         </div> 
         <h2>Select Tip % </h2>
-        <div class="grid">
-          <input type="button" class="btn" value="5%">
-          <input type="button" class="btn" value="10%">
-          <input type="button" class="btn" value="15%">
-          <input type="button" class="btn" value="25%">
-          <input type="button" class="btn" value="50%">
-          <input type="text" class="otherperc" value="Custom">
+        <div id="grid">
+          <button id="btn_5" class="btn" onclick="calc5()" value="0.05">5%</button>
+          <button id="btn_10" class="btn" onclick="calc10()" value="0.10" >10%</button>
+          <button id="btn_15" class="btn" onclick="calc15()" value="0.15" >15%</button>
+          <button id="btn_25" class="btn" onclick="calc25()" value="0.25">25%</button>
+          <button id="btn_50" class="btn" onclick="calc50()" value="0.50">50%</button>
+          <input type="text" onclick="this.select()" onkeypress="enter(this,event)" placeholder="Custom"  class="costum">
         </div>
         <div class="people">
           <h3>Number of People</h3>
-          <input type="text" class="number" placeholder="0">
+          <input type="text" id="numpeople" class="number" placeholder="0">
            <img id="people" src="icon-person.svg" alt="" width="20" height="20">
         </div>
         <div class="side">
@@ -40,8 +43,10 @@
             <h4 id="total-h">Total</h4>
             <p>/ person</p>
             <span id="total">$0.00</span>
-            <button class="reset">RESET</button>
+            <button  onclick="reset()" class="reset">RESET</button>
         </div>
+     
    </main>
+   <script src="script.js"></script>
 </body>
 </html>
